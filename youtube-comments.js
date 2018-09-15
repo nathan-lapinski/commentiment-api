@@ -1,6 +1,7 @@
+require('dotenv/config');
 const axios = require('axios');
 const videoId = 'kbhWCLbZqj8'; //? get this from chrome extension???
-const dummyApiKey = 'AIzaSyDt17FKOXnKgdLYpxTJJD7rc0ajHQFlPfE'; //TODO: figure out how to secure the api ket
+const ApiKey = process.env.API_KEY; //TODO: set an env variable on heroku
 const youtubeUrl = 'https://www.googleapis.com/youtube/v3/commentThreads';
 const commentimentUrl = 'https://commentiment.herokuapp.com/sentiment';
 
@@ -25,7 +26,7 @@ axios.get(youtubeUrl, {
   params : {
     part: 'snippet',
     videoId: videoId,
-    key: dummyApiKey
+    key: ApiKey
   }
 })
   .then(response => {
