@@ -1,1 +1,1 @@
-web: node ./sentiment-api/app.js
+web: npm install && node ./sentiment-api/app.js
