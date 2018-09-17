@@ -1,4 +1,3 @@
-require('dotenv/config');
 const axios = require('axios');
 const ApiKey = process.env.API_KEY; //TODO: set an env variable on heroku
 const youtubeUrl = 'https://www.googleapis.com/youtube/v3/commentThreads';

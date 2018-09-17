@@ -15,7 +15,5 @@
     "install": "^0.12.1",
     "sentiment": "^5.0.1"
   },
-  "devDependencies": {
-    "dotenv": "^6.0.0"
-  }
+  "devDependencies": {}
 }
