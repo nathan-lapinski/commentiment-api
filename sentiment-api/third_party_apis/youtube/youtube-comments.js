@@ -1,5 +1,5 @@
 const axios = require('axios');
-const ApiKey = process.env.API_KEY; //TODO: set an env variable on heroku
+const ApiKey = process.env.YOUTUBE_API_KEY;
 const youtubeUrl = 'https://www.googleapis.com/youtube/v3/commentThreads';
 
 // private
